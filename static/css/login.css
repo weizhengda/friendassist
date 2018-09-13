@@ -1,0 +1,123 @@
+.login_wrap{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background:rgba(19,145,122,.3);
+}
+.login{
+        width:9rem;
+        height:9rem;
+        position: absolute;
+        top:50%;
+        left:0.5rem;
+        transform: translate(0,-50%);
+        background:#fff;
+}
+
+.form{
+    width:8rem;
+    margin:0 auto;
+}
+.form .close{
+    height:0.8rem;
+    position: relative;
+}
+.form .close span{
+    display: inline-block;
+    position: absolute;
+    top:0.3rem;
+    right:0;
+    width:0.4rem;
+    height:0.4rem;
+    background:url(../img/close_default.png) center center;
+    background-size:100% 100%;
+}
+.form input{outline: none;border:none;color:rgba(145,145,145)}
+.form .title{
+     position: relative;
+     height:1.5rem;
+     line-height:1.5rem;
+     margin-bottom:0.8rem;
+     font-weight: 700;
+     font-size:0.5rem;
+     text-align: center;
+}
+.form .title::before{
+    position:absolute;
+    left:1rem;
+    top:0.5rem;
+    width: 1rem;
+    height:0.5rem;
+    content:'';
+    background:url(../img/title_left.png) center center;
+    background-size:100% 100%;
+}
+.form .title::after{
+    position:absolute;
+    right:1rem;
+    top:0.5rem;
+    width: 1rem;
+    height:0.5rem;
+    content:'';
+    background:url(../img/title_right.png) center center;
+    background-size:100% 100%;
+}
+.form .phone{
+    display: flex;
+    padding:0.2rem 0;
+    border-top:1px solid #f0f0f0;
+    border-bottom:1px solid #f0f0f0;
+}
+.form .phone input{
+    width: 7rem;
+    height:1rem;
+    font-size:0.4rem;
+}
+
+.form .phone img{
+    display: inline-block;
+    width:0.6rem;
+    height:0.6rem;
+    padding:0.2rem;
+    background-size: 100% 100%;
+}
+.form .code{
+    display:flex;
+    padding:0.2rem 0;
+    border-bottom:1px solid #f0f0f0;
+}
+.form .code input{
+    width: 4rem;
+    height:1rem;
+    font-size:0.4rem;
+}
+
+.form .code img{
+    display: inline-block;
+    width:0.6rem;
+    height:0.6rem;
+    padding:0.2rem;
+    background-size: 100% 100%;
+}
+.form .code span{
+   height:0.5rem;
+   padding-left:0.5rem;
+   margin:0.25rem 0;
+   color:rgba(27,210,173);
+   border-left:1px solid rgba(27,210,173);
+}
+
+.form .sign{
+    width:8rem;
+    height:1.3rem;
+    line-height:1.3rem;
+    font-size: 0.4rem;
+    text-align: center;
+    position: absolute;
+    left:0.5rem;
+    bottom:0.5rem;
+    color:#fff;
+    background: rgba(27,210,173);
+}

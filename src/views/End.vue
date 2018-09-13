@@ -1,6 +1,13 @@
 <template>
     <div id="end">
-
+         <div class="rule">活动规则</div>
+          <div class="end">
+              <div class="title">活动结束</div>
+              <div class="content">
+                  <p class="text1">非常遗憾</p>
+                  <p class="text2">您尚未完成好友助力活动</p>
+              </div>
+          </div>
     </div>
 </template>
 <script>
@@ -13,3 +20,8 @@
         },
     }
 </script>
+<style>
+    @import '../../static/css/end';
+</style>
+
+

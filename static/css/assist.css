@@ -1,0 +1,47 @@
+.share_wrap{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height:4.4rem;
+    background:#fff;
+}
+
+.share{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    height:4.4rem;
+    background:#fff;
+}
+.share .face{
+    width:100%;
+    height:1.5rem;
+    line-height:1.5rem;
+    margin:0 auto;
+}
+.share .face img{
+    width:1rem;
+    height: 1rem;
+    margin:0.3rem 0 0 0.45rem;
+}
+.share .info{
+    width:9rem;
+    height: 0.8rem;
+    line-height:0.8rem;
+    margin:0 auto;
+    font-size:0.5rem;
+    color: #ff5151;
+}
+.share .share_btn{
+    position: absolute;
+    left:0.5rem;
+    bottom:0.5rem;
+    width: 9rem;
+    height: 1.3rem;
+    line-height:1.3rem;
+    font-size: 0.6rem;
+    text-align: center;
+    color:#fff;
+	background-color: #1bccb1;
+}

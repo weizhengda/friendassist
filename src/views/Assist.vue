@@ -1,5 +1,5 @@
 <template>
-    <div id="folllow">
+     <div id="assist">
           <div class="rule">活动规则</div>
           <div class="share_wrap">
               <div class="share">
@@ -13,37 +13,22 @@
                         <img src="./static/img/face.png" alt="">
                 </div>
                 <div class="info">你已经帮他助力啦！</div>
-                <div class="share_btn" @click="join">我也参加</div>
+                <div class="share_btn">我也参加</div>
             </div>
           </div>
-          <div class="follow_wrap" v-show="isshow">
-                <div id="follow">
-                    <div class="content">
-                        <div class="close">
-                            <div class="close_btn" @click="close"></div>
-                        </div>
-                        <div class="title">关注参加活动</div>
-                        <div class="code">
-                             <img src="./static/img/weixin-gzh.jpg" alt="">
-                        </div>
-                        <div class="text">长按二维码关注公众号</div>
-                    </div>
-                </div>
-          </div>
-    </div>
+     </div>
 </template>
 <script>
-    export default{
-        name:'Follow',
+     export default{
+        name:'',
         data(){
             return{
-
+             
             }
         }
     }
 </script>
 <style>
     @import '../../static/css/assist';
-    @import '../../static/css/follow';
 </style>
 

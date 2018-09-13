@@ -1,0 +1,35 @@
+.end{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height:4.1rem;
+    background:#fff;
+}
+
+.end .title{
+    width:8.8rem;
+    height:1.2rem;
+    line-height:1rem;
+    position: absolute;
+    top:-0.6rem;
+    left:0.6rem;
+    font-size:0.6rem;
+    text-align: center;
+    color:#fff;
+    background:url(../img/title_bg.png) center center;
+    background-size:100% 100%;
+}
+.end .content{
+    margin:1rem 0;
+    text-align:center;
+    color: #ff5151;}
+.end .content .text1{
+     height:0.6rem;
+     font-size:0.6rem;
+}
+
+.end .content .text2{
+    height:0.6rem;
+    line-height:0.6rem;
+    font-size:0.4rem;
+}

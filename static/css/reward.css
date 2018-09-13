@@ -1,0 +1,50 @@
+
+.reward{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height:4.1rem;
+    background:#fff;
+}
+
+.reward .title{
+    width:8.8rem;
+    height:1.2rem;
+    line-height:1rem;
+    position: absolute;
+    top:-0.6rem;
+    left:0.6rem;
+    font-size:0.6rem;
+    text-align: center;
+    color:#fff;
+    background:url(../img/title_bg.png) center center;
+    background-size:100% 100%;
+}
+
+.reward .goods{
+    display: flex;
+    width:7rem;
+    margin:1.6rem auto;
+}
+
+.reward .goods img{
+    width: 1.6rem;
+	height: 1.6rem;
+	background-color: #f0f0f0;
+}
+
+.reward .goods .detail{
+    margin-left:0.5rem;
+}
+
+.reward .goods .detail .goods_title{
+    height:1rem;
+    font-size:0.6rem;
+    color:#333;
+}
+
+.reward .goods .detail .goods_number{
+    height:0.4rem;
+    font-size:0.4rem;
+    color:#888;
+}
