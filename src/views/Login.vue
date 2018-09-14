@@ -11,11 +11,11 @@
                         <div class="title">立即参加活动</div>
                         <div class="phone">
                             <img src="/static/img/icon_account.png" alt="">
-                            <input type="number" placeholder="请输入手机号码，新用户登陆即注册">
+                            <input v-model="phone" type="number" placeholder="请输入手机号码，新用户登陆即注册">
                         </div>
                         <div class="code">
                             <img src="/static/img/icon_pwd.png" alt="">
-                            <input type="number" placeholder="请输入验证码">
+                            <input v-model="code" type="number" placeholder="请输入验证码">
                             <span @click="sendCode">发送验证码</span>
                         </div>
                         <div class="sign" @click="login">马上报名</div>
@@ -25,11 +25,12 @@
     </div>
 </template>
 <script>
+   import Alert from '@/components/alert'
     export default{
         name:'Login',
         data(){
             return{
-               tel:'',  // 手机号码
+               phone:'',  // 手机号码
                code:''  // 验证码
             }
         },
@@ -45,9 +46,9 @@
             //登陆
             login(){
                if(this.phone === ''){
-                   this.$emit('showalert','请填写手机号码!')
+                  Alert.show('请输入手机号码！')
                }else if(this.code === ''){
-                   this.$emit('showalert','请填写验证码!')
+                  Alert.show('请输入验证码！')
                }
             }
         }
