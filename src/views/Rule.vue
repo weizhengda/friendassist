@@ -1,12 +1,12 @@
 <template>
-    <div id="_rule">
+    <div id="_rule" v-show="isshow">
          <div class="rule">活动规则</div>
           <div class="join">参加活动</div>
           <div class="rule_wrap">
                 <div id="rule">
                     <div class="content">
                         <div class="close">
-                            <span></span>
+                            <span @click="close"></span>
                         </div>
                         <div class="title">活动规则</div>
                         <div class="rules">
@@ -25,9 +25,16 @@
 <script>
     export default{
         name:'Rule',
-        data(){
-            return{
-
+        props:{
+            isshow:{
+                type:Boolean,
+                default:false
+            }
+        },
+        methods:{
+            close(){
+                this.isshow = false
+                this.$emit('closerule')
             }
         }
     }

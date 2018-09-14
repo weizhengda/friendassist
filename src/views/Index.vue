@@ -1,10 +1,10 @@
 <template>
     <div id="index">
-         <div class="rule">活动规则</div>
+         <div class="rule" @click="ruleTaggle">活动规则</div>
          <div class="join"  @click="join">参加活动</div>
          <!-- 登陆 -->
          <login v-if="loginShow" @closelogin="closeLogin"></login>
-         <rule v-if="ruleShow" @closerule="closeRule"></rule>
+         <rule :isshow="ruleShow" @closerule="closeRule"></rule>
     </div>
 </template>
 <script>
@@ -23,8 +23,14 @@
             }
         },
         methods:{
+            ruleTaggle(){
+              this.ruleShow = true
+            },
             closeLogin(){
                 this.loginShow = false
+            },
+            closeRule(){
+                this.ruleShow = false
             },
               // 参加活动
             join(){
