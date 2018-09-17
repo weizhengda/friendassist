@@ -1,7 +1,5 @@
 <template>
     <div id="_rule" v-show="isshow">
-         <div class="rule">活动规则</div>
-          <div class="join">参加活动</div>
           <div class="rule_wrap">
                 <div id="rule">
                     <div class="content">

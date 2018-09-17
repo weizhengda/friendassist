@@ -1,8 +1,8 @@
 <template>
     <div id="login_wrap">
-        <div class="rule">活动规则</div>
-          <div class="join">参加活动</div>
-          <div class="login_wrap">
+          <index></index>
+          <div class="join"  @click="join">参加活动</div>
+          <div class="login_wrap" v-show="isLogin">
                 <div class="login">
                     <div class="form">
                         <div class="close">
@@ -24,20 +24,28 @@
           </div>
     </div>
 </template>
-<script>
-   import Alert from '@/components/alert'
+<script> 
+    import Index from '@/views/Index'
+    import Alert from '@/components/alert'
     export default{
         name:'Login',
+        components:{
+           index:Index
+        },
         data(){
             return{
                phone:'',  // 手机号码
-               code:''  // 验证码
+               code:'',  // 验证码
+               isLogin:false
             }
         },
          methods:{
+            join(){
+                this.isLogin = true
+            },
             // 关闭登陆弹窗
             close(){
-                this.$emit('closelogin',false)
+                this.isLogin = false
             },
             // 发送验证码
             sendCode(){
@@ -56,5 +64,17 @@
 </script>
 <style>
    @import '../../static/css/login.css';
+     .join{
+         width: 9.4rem;
+         height: 1.3rem;
+         line-height:1.3rem;
+         font-size: 0.6rem;
+         position: absolute;
+         bottom:0.3rem;
+         left:0.3rem;
+         z-index:9;
+         color:#fff;
+         background-color: #ff5d5d;
+    }
 </style>
 

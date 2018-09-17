@@ -1,6 +1,5 @@
 <template>
     <div id="end">
-         <div class="rule">活动规则</div>
           <div class="end">
               <div class="title">活动结束</div>
               <div class="content">

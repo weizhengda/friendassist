@@ -1,10 +1,9 @@
 <template>
     <div id="reward">
-          <div class="rule">活动规则</div>
           <div class="reward">
               <div class="title">恭喜您获得活动奖励!</div>
               <div class="goods">
-                   <img src="./static/img/reward.png" alt="">
+                   <img src="../../static/img/reward.png" alt="">
                    <div class="detail">
                         <div class="goods_title">家用全部腰部靠垫</div>
                         <div class="goods_number">
