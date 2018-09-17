@@ -25,7 +25,7 @@
               this.isLogin = true
             },
             loginTo(){
-              this.$router.push('/follow')
+              this.$router.push('/assist')
             }
         }
     }

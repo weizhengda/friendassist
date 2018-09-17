@@ -8,11 +8,11 @@
                         </div>
                         <div class="title">立即参加活动</div>
                         <div class="phone">
-                            <img src="/static/img/icon_account.png" alt="">
+                            <img src="../../static/img/icon_account.png" alt="">
                             <input v-model="phone" type="number" placeholder="请输入手机号码，新用户登陆即注册">
                         </div>
                         <div class="code">
-                            <img src="/static/img/icon_pwd.png" alt="">
+                            <img src="../../static/img/icon_pwd.png" alt="">
                             <input v-model="code" type="number" placeholder="请输入验证码">
                             <span @click="sendCode">发送验证码</span>
                         </div>
