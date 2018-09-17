@@ -18,16 +18,6 @@ export default new Router({
       component: Index
     },
     {
-      path: '/login',
-      name: 'Login',
-      component: Login
-    },
-    {
-      path: '/follow',
-      name: 'Follow',
-      component: Follow
-    },
-    {
       path: '/share',
       name: 'Share',
       component: Share

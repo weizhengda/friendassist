@@ -2,6 +2,7 @@
 .reward{
     position: absolute;
     bottom: 0;
+    left:0;
     width:100%;
     height:4.1rem;
     background:#fff;
@@ -24,7 +25,7 @@
 .reward .goods{
     display: flex;
     width:7rem;
-    margin:1.6rem auto;
+    margin:1.2rem auto;
 }
 
 .reward .goods img{
