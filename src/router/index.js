@@ -11,6 +11,7 @@ import End from '@/views/End'
 Vue.use(Router)
 
 export default new Router({
+  model:'hash',
   routes: [
     {
       path: '/',
